@@ -4,6 +4,9 @@ export default function Contact() {
 
     return (
         <>
+        <section className={styles.contact}>
+            <p>coucou</p>
+        </section>
         </>
     );
 }

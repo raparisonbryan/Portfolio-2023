@@ -1,65 +1,96 @@
 @import 'styles/settings.scss';
 
 .about {
-    height: 55vh;
     display: flex;
-    flex-direction: row;
-    padding: 60px 10% 0 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 150px;
 
-
-    &__col7 {
-        width: 55%;
-        
-    }
-
-    &__col5 {
-        width: 45%;
+    &__header {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        gap: 10px;
     }
 
-    &__title {
-        font-family: $title__font;
-        font-size: $h2__size;
-        font-weight: 700;
-    }
-
-    &__text {
-        font-family: $text__font;
-        font-size: $text__size;
-    }
-
-    &__buttonContainer {
+    &__content {
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin-top: 20px;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
     }
+}
 
-    &__buttonWrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100px;
-        padding: 10px 20px;
-        border-radius: $radius;
-        border: 2px solid $text__color;
-        margin-right: 20px;
-        border: 1px solid #fff;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
+.card {
+    width: 31%;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255, .1);
+    overflow: hidden;
+    flex: 1;
+    transition: all .3s ease-in-out;
+    position: relative;
+    z-index: 90;
 
-        &:hover {
-            background-color: transparent;
-            color: #fff;
-            border: 1px solid #fff;
+    &:hover {
+        border: 1px solid white; 
+        transform: translate(0, -20px);
+
+        .card__foreground {
+            opacity: 0; 
         }
     }
 
-    &__button {
-        width: 20px;
+    &__imageWrapper {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        -webkit-mask-image: linear-gradient(180deg, black 60%, transparent 100%);
+        mask-image: linear-gradient(black 60%, transparent 100%); 
+    }
+
+    &__image {
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        z-index: 80;
+    }
+
+    &__foreground {
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        z-index: 90;
+        transition: all .3s ease-in-out;
+
+    }
+
+    &__textWrapper {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__title {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        transform: translate(0%, -100%);
+    }
+
+    &__text {
+        color: $grey__text;
+        font-size: 14px;
     }
 }
+
+
+
+

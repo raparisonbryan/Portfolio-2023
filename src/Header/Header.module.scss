@@ -36,10 +36,11 @@
     left: 0;
     width: 100%;
     color: transparent;
+    z-index: 100;
 
     &__container {
-        width: 1200px;
-        max-width: 80%;
+        width: 80%;
+        max-width: 1920px;
         margin-top: 32px;
         border-radius: $radius;
         justify-content: space-between;

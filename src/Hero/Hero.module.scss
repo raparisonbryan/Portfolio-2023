@@ -6,17 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    &__h1 {
-        font-family: $title__font;
-        font-size: $h1__size;
-        margin: 0;
-    }
-
-    &__h2 {
-        font-family: $title__font;
-        font-size: $h2__size;
-        font-weight: 400;
-        margin: 0;
-    }
+.hero h2 {
+    font-weight: 400;
 }
