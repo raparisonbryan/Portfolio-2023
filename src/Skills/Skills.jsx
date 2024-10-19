@@ -84,19 +84,19 @@ export default function Skills() {
                         <div id='bar'>
                             <div id="line"></div>
                             <div className={styles.greyLine}></div>
-                            <div className={styles.progressItem}>
+                            <div className={styles.item}>
                                 <span className={styles.mask}></span>
                                 <span className={styles.point}></span>
                             </div>
-                            <div className={styles.progressItem}>
+                            <div className={styles.item}>
                                 <span className={styles.mask}></span>
                                 <span className={styles.point}></span>
                             </div>
-                            <div className={styles.progressItem}>
+                            <div className={styles.item}>
                                 <span className={styles.mask}></span>
                                 <span className={styles.point}></span>
                             </div>
-                            <div className={styles.progressItem}>
+                            <div className={styles.item}>
                                 <span className={styles.mask}></span>
                                 <span className={styles.point}></span>
                             </div>

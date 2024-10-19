@@ -51,7 +51,8 @@
         display: flex;
         color: $text__color;
         font-family: $text__font;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, .33), rgba(0, 0, 0, .33));
+        backdrop-filter: blur(10px);
+        background-image: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1));
         background-repeat: no-repeat;
         background-size: 0% 100%; 
         animation: backgroundSlide 1.4s ease-in-out forwards;; 

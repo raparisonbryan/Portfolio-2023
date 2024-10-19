@@ -26,6 +26,7 @@ export default function Projects() {
                 <h2 className={styles.projects__title}>Projets</h2>
             </div>
             <Swiper
+                direction='vertical'
                 modules={[Pagination, Autoplay]}
                 spaceBetween={0}
                 slidesPerView={1}
